@@ -8,12 +8,14 @@ Users can set an energy loss/gain region they are interested in. Rule of thumb i
 
 TREX_DetectorCoverage.py:
 Script shows the Q-E region covered by 4 boxes vs 10 boxes of Multi-Grid detectors
-For now it's only for powder samples. Will upgrade it for single crystal coverage eventually (a bit more work)
+For now it's only for powder samples. Will upgrade it for single crystal coverage eventually (a bit more work needed to account for single crystals)
 
 
 InelasticResolution_OptimisedFluxResolution.py:
 Calculates the inelastic resolution for a given incident wavelength for T-REX.
-Uses the Lechner formula for the resolution function
-The flux/resolution ratio is optimised by matching the P-chopper and M-chopper opening times using the PWR Optimisation in this paper:
+Uses the Lechner formula for the resolution function - Pulse Width Ratio optimations is also applied. See paper attached to this repo.
+The flux/resolution ratio is optimised by matching the P-chopper and M-chopper opening times.
 The P-chopper peak shape is a top-hat when looking at McStas: A factor of 0.2887 is applied to the opening time tau_P to recreate the top-hat shape,
 The M-chopper peak shape is triangular when looking at McStas: A factor of 0.2041 is applied to the opening time tau_M to recreate the triangular shape.
+Resulting plot is for both the high flux and high resolution settings on T-REX. Script gives a warning if the ratios aren't optimised.
+
