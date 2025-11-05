@@ -1,21 +1,20 @@
 # T-REX Tools
-T-REX scripts for detector coverage, energy resolution, frame-overlap diagrams
+T-REX scripts for detector coverage, energy resolution, frame-overlap diagrams.<br/>
 
 
-TREX_FrameOverlapChecks.py:
-Script looks at a central wavelength, M-chopper speed and plots your time-distance diagram between sample and detectors.
-Users can set an energy loss/gain region they are interested in. Rule of thumb is 85% loss for thermal and 20% loss for cold wavelengths
+TREX_FrameOverlapChecks.py:<br/>
+- Script looks at a central wavelength, M-chopper speed and plots your time-distance diagram between sample and detectors.<br/><br/>
+- Users can set an energy loss/gain region they are interested in. Rule of thumb is 85% loss for thermal and 20% loss for cold wavelengths.<br/><br/>
 
-TREX_DetectorCoverage.py:
-Script shows the Q-E region covered by 4 boxes vs 10 boxes of Multi-Grid detectors
-For now it's only for powder samples. Will upgrade it for single crystal coverage eventually (a bit more work needed to account for single crystals)
+TREX_DetectorCoverage.py:<br/>
+- Script shows the Q-E region covered by 4 boxes vs 10 boxes of Multi-Grid detectors.<br/><br/> - Powder detector coverage only for now.<br/><br/> - Single crystal coverage is not included yet.<br/><br/>
 
 
-InelasticResolution_OptimisedFluxResolution.py:
-Calculates the inelastic resolution for a given incident wavelength for T-REX.
-Uses the Lechner formula for the resolution function - Pulse Width Ratio optimations is also applied. See paper attached to this repo.
-The flux/resolution ratio is optimised by matching the P-chopper and M-chopper opening times.
-The P-chopper peak shape is a top-hat when looking at McStas: A factor of 0.2887 is applied to the opening time tau_P to recreate the top-hat shape,
-The M-chopper peak shape is triangular when looking at McStas: A factor of 0.2041 is applied to the opening time tau_M to recreate the triangular shape.
-Resulting plot is for both the high flux and high resolution settings on T-REX. Script gives a warning if the ratios aren't optimised.
+InelasticResolution_OptimisedFluxResolution.py: <br/>
+- Calculates the inelastic resolution for a given incident wavelength for T-REX.<br/><br/>
+- Uses the Lechner formual for the resolution.<br/><br/>
+- The opening times are optimised following the formalism of the attached paper.<br/><br/>
+- McStas Monitors show the P-chopper peak shape is a top-hat function: Scaling the opening time by 0.2881 to recreate that shape.<br/><br/>
+- McStas Monitors show the M-chopper peak shape is a triangular function: Scaling the opening time by 0.2041 to recreate that shape.<br/><br/>
+
 
