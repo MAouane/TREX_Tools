@@ -9,7 +9,7 @@ TREX_FrameOverlapChecks.py:<br/>
 - Plot at the end looks at how much overlap there is and how much of the gain and loss windows you can use before overlap occurs. Needs a bit of tweaking/wrap around to match the first rep of ESS pulse (n+1) with the last rep of ESS pulse (n).<br/><br/>
 
 TREX_DetectorCoverage.py:<br/>
-- Script shows the Q-E region covered by 4 boxes vs 10 boxes of Multi-Grid detectors.<br/><br/> - Powder detector coverage only for now.<br/><br/> - Single crystal coverage is not included yet.<br/><br/>
+- Script shows the Q-E region covered by 4 boxes vs 10 boxes of Multi-Grid detectors.<br/><br/> - Powder detector coverage only for now.<br/><br/> - Single crystal coverage is not included yet.<br/><br/> - Note that the detector coverage starts from 5 degrees. This is just to account for direct beam 'splurge' covering the lowest angles.<br/><br/>
 
 
 InelasticResolution_OptimisedFluxResolution.py: <br/>
