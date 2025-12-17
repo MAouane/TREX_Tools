@@ -21,5 +21,5 @@ InelasticResolution_OptimisedFluxResolution.py: <br/>
 - McStas Monitors show the M-chopper peak shape is a triangular function: Scaling the opening time by 0.2041 to recreate that shape.<br/><br/>
 
 
-Things that will be added in different scripts:<br/>
+Things that will be added in future scripts:<br/>
 - Calculation of the Q resolution of T-REX for a given wavelength.<br/><br/>
