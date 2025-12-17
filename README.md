@@ -14,8 +14,9 @@ TREX_DetectorCoverage.py:<br/>
 
 InelasticResolution_OptimisedFluxResolution.py: <br/>
 - Calculates the inelastic resolution for a given incident wavelength for T-REX.<br/><br/>
-- Uses the Lechner formula for the resolution. Optimises at the elastic, can be adapted for any given energy transfer. the result is DELTA E, not a FWHM like the previous version.<br/><br/>
-- The opening times are optimised following the formalism of the attached paper.<br/><br/>
+- Uses the Lechner formula for the resolution. Optimises at the elastic, can be adapted for any given energy transfer. the Delta E result IS THE FWHM OF T-REX according to the Lechner paper. <br/><br/>
+- The opening times are optimised at the elastic line following the formalism of the attached paper.<br/><br/>
+- One can optimise in the inelastic regime. This is more relevant for the thermal wavelengths than cold ones.<br/><br/>
 - McStas Monitors show the P-chopper peak shape is a top-hat function: Scaling the opening time by 0.2881 to recreate that shape.<br/><br/>
 - McStas Monitors show the M-chopper peak shape is a triangular function: Scaling the opening time by 0.2041 to recreate that shape.<br/><br/>
 
