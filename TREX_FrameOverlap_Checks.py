@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.cm import get_cmap
 import numpy as np
-import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 
 ''' Constants and functions to convert between ToF, Energy in meV and Wavelengths in Å'''
@@ -363,4 +362,5 @@ ax.legend(fontsize=13)
 ax.tick_params(labelsize=13)
 plt.tight_layout()
 plt.show()
+
 
