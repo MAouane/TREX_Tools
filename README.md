@@ -5,7 +5,7 @@ T-REX scripts for detector coverage, energy resolution, frame-overlap time-dista
 TREX_FrameOverlapChecks.py:<br/>
 - Script looks at a central wavelength, M-chopper speed and plots your time-distance diagram between sample and detectors.<br/><br/>
 - All analytically calculated wavelengths and ToF's in the .py scripts have been cross checked with McStas.<br/><br/>
-- Users can set an energy loss/gain region they are interested in. Rule of thumb is 85% loss for thermal and 20% loss for cold wavelengths.<br/><br/>
+- Users can set an energy loss/gain region they are interested in. For this script, energy loss is set to 80% and energy gain is set to 'infinite' where elastically scattered neutrons reach the detectors instantaneously. This is for both cold and thermal wavelengths.<br/><br/>
 - Plot at the end looks at how much overlap there is and how much of the gain and loss windows you can use before overlap occurs. Needs a bit of tweaking/wrap around to match the first rep of ESS pulse (n+1) with the last rep of ESS pulse (n).<br/><br/>
 
 TREX_DetectorCoverage.py:<br/>
